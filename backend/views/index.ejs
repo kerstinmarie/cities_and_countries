@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Städer och länder</title>
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #22853d;
+    font-family: 'Helvetica Neue', Calibri, sans-serif;
+    color: #444444;
+}
+h1, h2{
+    color: #ffffff;
+}
+h1{
+   font-size: 1.9rem;
+   font-weight: 700;
+   line-height: 1.5em;
+   text-align: center;
+   margin: 20px 0 30px 0;
+}
+h2{
+   font-size: 1.2rem;
+   text-align: left;
+   font-weight: 700;
+   line-height: 1.5rem;
+}
+#wrapper {
+  width: 100%;
+  height: auto;
+}
+.main{
+   height: 750px;
+   padding: 0 4% 30px 4%;
+}
+div.add-container{
+   padding: 0;
+   max-width: 440px;
+}
+form.add-form{
+   margin-top: 20px;
+   height: auto;
+   width: 92%;
+   padding: 20px 4% 30px 4%;
+   border-radius: 7px;
+   background-color:#ebecf0;
+}
+label{
+   display: inline-block;
+   color: #22853d;
+   font-size: 1.1rem;
+   font-weight: 700;
+}
+input#stad,
+input#countryid,
+input#population,
+input#land{
+   display: inline-block;
+   width: 97%;
+   padding: 8px 0 8px 2%;
+   background-color:#ebecf0;
+   border-bottom: 2px solid #22853d;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   margin: 10px 0;
+   outline: none;
+   font-size: 0.95rem;
+}
+#saveland-button,
+#savestad-button{
+   display: block;
+   margin-top: 10px;
+   padding: 10px;
+   border-radius: 20px;
+   color: #ffffff;
+   font-weight: bold;
+   width: 100%;
+   background-image: linear-gradient(#22853d, #134d23);
+   font-size: 0.9rem;
+   cursor: pointer;
+   outline: none;
+   border: none;
+}
+#saveland-button:hover,
+#savestad-button:hover{
+   background-image: linear-gradient(#134d23 #134d23);
+}
+
+</style>
+<body>
+    <div id="wrapper">
+    <header class="page-header">
+         <h1>Städer och länder</h1>
+    </header>
+        <main>
+            <div class="main"> 
+                <div class="add-container">
+                    <header>
+                        <h2>Lägg till en stad</h2>
+                    </header>
+                    <form class="add-form"action="/cities/add" method="post" name="form1">
+                        <label class="add-label" for="stad">Stad: </label>
+                        <input type="text" id="stad" name="stad" placeholder="Ange namn på stad">
+                        <label class="add-label" for="stad">Country ID: </label>
+                        <input type="text" id="countryid" name="countryid" placeholder="Ange land ID">
+                        <label class="add-label" for="population">Population: </label>
+                        <input type="text" id="population" name="population" placeholder="Ange storlek på population">
+                        <button type='submit' id="savestad-button" name="savestad-button" >Lägg till stad</button>
+                    </form>
+                </div>
+                <div class="add-container">
+                    <header>
+                        <h2>Lägg till ett land</h2>
+                    </header>
+                    <form class="add-form"action="/countries/add" method="post" name="form2">
+                        <label class="add-label" for="land">Land: </label>
+                        <input type="land" id="land" name="land" placeholder="Ange namn på land">
+                        <button type='submit' id="saveland-button" name="saveland-button" >Lägg till land</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+</div>
+</body>
+</html>

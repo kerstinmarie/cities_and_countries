@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Städer och länder</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: #22853d;
+    font-family: 'Helvetica Neue', Calibri, sans-serif;
+    color: #444444;
+}
+h1, h2, p{
+    color: #ffffff;
+}
+h1{
+   font-size: 1.9rem;
+   font-weight: 700;
+   line-height: 1.5em;
+   text-align: center;
+   margin: 20px 0 30px 0;
+}
+h2{
+   font-size: 1.2rem;
+   text-align: left;
+   font-weight: 700;
+   line-height: 1.5rem;
+}
+p{
+   font-size: 1rem;
+   line-height: 1.1rem;
+}
+#wrapper {
+  width: 100%;
+  height: auto;
+}
+.main{
+   height: 750px;
+   padding: 0 4% 30px 4%;
+}
+.link{
+   color: #ffffff;
+}
+</style>
+<body>
+   <div id="wrapper">
+      <div class="main"> 
+        <header>
+          <h1>Senast sparad data</h1>
+        </header>
+          <div>
+            <h2><%- data -%></h2>
+          </div>
+          <div>
+            <!--<button onclick="document.location.href ='./'">Back to Admin</button>-->
+            <p><a href="/" class="link">Tillbaka till adminsidan</a></p>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
