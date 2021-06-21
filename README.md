@@ -1,19 +1,33 @@
 # Övning: API till städer och länder
 ## Kravspecifikation
 
-* Två separata sidor, en för att skapa och ändra JSON-filer på med Node.js på Azure och en för presentation av städer och länder.
+En övning som bygger vidare på en inlämningsuppgift i kursen Webbapplikation MVP, 50 yhp, från utbildningen Webbutvecklare .NET, se nedan.
+
+* Två separata sidor, en för att skapa och ändra JSON-filer på med Node.js på Heroku och en för presentation av städer och länder.
 * En frontend applikation på GitHub Pages som visar städer och länder utifrån de JSON-svar som generas från Node.js-appen.
 * Till Node.js appen ska man kunna lägga till nya länder och till dessa länder nya städer samt antal invånare.
 * Ändringar skall automatiskt reflekteras på frontend sidan på GitHub Pages.
 
 <br/>
 https://kerstinmarie.github.io/cities_and_countries/frontend/
-
+<br/>
+(Det sker en viss fördröjning från Heroku innan sidan börjar fungera)
 <br/><br/>
+
+### Lärdomar
+* Att skapa en dynamisk webbplats där dynamisk inhämtning och lagring av data används för att visualisera användarens besökta städer och länder, <br/>
+* Att använda: 
+  - och importera extern JSON-data,
+  - och hämta data med Fetch,
+  - och spara data med localStorage,
+  - metoderna JSON.stringify() och JSON.parse(),
+  - Node.js, express, ejs, fs m.m.
+ 
+<br/>
 
 # Inlämningsuppgift: Städer och länder, 10 Yhp
 ## Inlämningsuppgift i kursen Webbapplikation MVP, 50 yhp
-Uppgiften består i att göra en sida där dynamisk inhämtning och lagring av data används för att visualisera användarens besökta städer och länder med hjålp av information i från två olika JSON-filer.
+Uppgiften består i att göra en sida där dynamisk inhämtning och lagring av data används för att visualisera användarens besökta städer och länder med hjälp av information i från två olika JSON-filer.
 
 Kravspecifikation:
 
