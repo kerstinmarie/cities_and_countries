@@ -2,12 +2,12 @@
 console.log("main.js");
 let visitCitiesArr = [];
 
-fetch('https://app-countries-and-cities.herokuapp.com/countries')
+fetch('https://tame-gold-clam-ring.cyclic.app/countries')
     .then(function (response) {
         return response.json();
     })
     .then(function (land) {
-        fetch('https://app-countries-and-cities.herokuapp.com/cities')
+        fetch('https://tame-gold-clam-ring.cyclic.app/cities')
             .then(function (response) {
                 return response.json();
             })
