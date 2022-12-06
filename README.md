@@ -10,8 +10,6 @@ En övning som bygger vidare på en inlämningsuppgift i kursen Webbapplikation 
 
 <br/>
 https://kerstinmarie.github.io/cities_and_countries/frontend/
-<br/>
-(Det sker en viss fördröjning från Heroku innan sidan börjar fungera)
 <br/><br/>
 
 ### Lärdomar
